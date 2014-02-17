@@ -4,9 +4,15 @@
  */
 
 var express = require('express');
+var path = require('path');
 var http = require('http');
 
 var app = express();
+var index = require('./routes/index.js');
+var stageone = require('./routes/stageone.js');
+var stagetwo = require('./routes/stagetwo.js');
+//var stagethree = require('./routes/stagethree.js');
+var stagefour = require('./routes/stagefour.js');
 
 // all environments
 app.configure(function(){
@@ -14,30 +20,29 @@ app.configure(function(){
 	app.set('port', process.env.PORT || 3000);
 	app.set('view engine', 'jade');
 	app.set('views', __dirname + '/views');
-	//app.use(express.static(path.join(__dirname, 'public')));
+	app.use(express.static(path.join(__dirname, 'public')));
 	
 });
 
 
-app.get('/', function(req, res){
-	res.send("Welcome Successful");
-});
+app.get('/index', index.index);
+app.post('/index', index.indexAdd);
 
-app.get('/oneone', function(req, res){
-	res.render("oneone.jade");
-});
+app.get('/oneone', stageone.oneone);
+app.post('/oneone', stageone.oneoneAdd);
 
-app.get('/twoone', function(req, res){
-	res.render("twoone.jade");
-});
+app.get('/twoone', stagetwo.twoone);
+app.post('/twoone', stagetwo.twooneAdd);
 
-app.get('/twotwo', function(req, res){
-	res.render("twotwo.jade");
-});
+app.get('/twotwo', stagetwo.twotwo);
+app.post('/twotwo', stagetwo.twotwoAdd);
 
-app.get('/twothree', function(req, res){
-	res.render("twothree.jade");
-});
+app.get('/twothree', stagetwo.twothree);
+app.post('/twothree', stagetwo.twothreeAdd);
+
+app.get('/fourtwo', stagefour.fourtwo);
+app.post('/fourtwo', stagefour.fourtwoAdd);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
