@@ -1,20 +1,21 @@
 doctype
 html
-	head
-	body
-		h2(style='color: green;')
-			p Stage 2 - Template 3 of 3 (Problem Description)
-		form(id='form', method="POST", action="/twothree")
-			p User:
-			textarea(id='user', rows='4', cols='150', placeholder='Describe your final user segment and why have you chosen to focus on this user')
-			br
-			br
-			p Problem:
-			textarea(id='problem', rows='4', cols='150', placeholder='Give a brief description of the core problem and make a list of other related sub-problems')
-			br
-			br
-			p Problem Statement:
-			textarea(id='pstatement', rows='4', cols='150', placeholder='Formulate one very precise sentence that summarizes exactly the problem you want to solve')
-			br
-			br
-			input(type='submit', value='SAVE & CONTINUE')
+    head
+        title= title
+    body
+        h2(style='color: green;')
+            p Stage 2 - Template 3 of 3 (Problem Description)
+        form(id='form', method="POST", action="/twothree")
+            p User:
+            textarea(id='user', rows='4', cols='150', placeholder='Describe your final user segment and why have you chosen to focus on this user')
+            br
+            br
+            p Problem:
+            textarea(id='problem', rows='4', cols='150', placeholder='Give a brief description of the core problem and make a list of other related sub-problems')
+            br
+            br
+            p Problem Statement:
+            textarea(id='pstatement', rows='4', cols='150', placeholder='Formulate one very precise sentence that summarizes exactly the problem you want to solve')
+            br
+            br
+            input(type='submit', value='SAVE & CONTINUE')

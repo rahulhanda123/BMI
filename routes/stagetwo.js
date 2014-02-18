@@ -1,13 +1,13 @@
 exports.twoone = function(req, res){
-    res.render('stagetwo/twoone.jade');
+    res.render('stagetwo/twoone.jade', {title: 'Stage 2 - 1 of 3'});
 }
 
 exports.twotwo = function(req, res){
-    res.render('stagetwo/twotwo.jade');
+    res.render('stagetwo/twotwo.jade', {title: 'Stage 2 - 2 of 3'});
 }
 
 exports.twothree = function(req, res){
-    res.render('stagetwo/twothree.jade');
+    res.render('stagetwo/twothree.jade', {title: 'Stage 2 - 3 of 3'});
 }
 
 
