@@ -1,0 +1,33 @@
+doctype
+html
+    head
+        title= title
+    body
+        h2(style='color: green;')
+            p Stage 4 - Template 2 of 2 (Idea Description)
+        form(id='form', method="POST" action="twothree")
+            p Problem:
+            textarea(id='problem', rows='6', cols='150', placeholder='What problem are you trying to solve?' noresize)
+            br
+            br
+            p Costs:
+            textarea(id='cost', rows='6', cols='150', placeholder='What will it cost to develop your solution? What are the ongoing fixed+variable costs?')
+            br
+            br
+            p Solution:
+            textarea(id='solution', rows='6', cols='150', placeholder='What is your idea and how does it work? What is the core functionality of your idea? What is your unique value proposition to the user? How will you market your solution and reach the user?')
+            br
+            br
+            p User:
+            textarea(id='user', rows='6', cols='150', placeholder='Who are you helping with your solution? Who is the most important user?')
+            br
+            br
+            p Competition:
+            textarea(id='competition', rows='6', cols='150', placeholder='What are the alternative solutions to the problem?')
+            br
+            br
+            p Revenue:
+            textarea(id='revenue', rows='6', cols='150', placeholder='How are you going to make money? Who pays? How much will they pay? How do they pay(long-time fee/ongoing subscription/license)')
+            br
+            br
+            input(type='submit', value='SAVE & CONTINUE')

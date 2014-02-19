@@ -1,0 +1,65 @@
+doctype
+html
+    head
+        title= title
+    body
+        h2(style='color: green;')
+            p Stage 2 - Template 1 of 2 (Identify)
+        form(id='form', method="POST", action="/twoone")
+            p New Insights about your user:
+            textarea(id='newInsights', rows='6', cols='150', placeholder='Data points from expert interviews and online research')
+            br
+            br
+            p Users:
+            p Based on the sub-challenges from previous stage - list the different user segments you have identified
+            //textarea(id='users', rows='3', cols='150', placeholder='Based on the sub-challenges from previous stage - list the different user segments you have identified')
+            table(id='mytable', width="400")
+                tr
+                    td 1
+                    td:  input(type='text', id='1')
+                tr
+                    td 2
+                    td:  input(type='text', id='2')
+                tr
+                    td 3
+                    td:  input(type='text', id='3')
+                tr
+                    td 4
+                    td:  input(type='text', id='4')
+                tr
+                    td 5
+                    td:  input(type='text', id='5')
+                tr
+                    td 6
+                    td:  input(type='text', id='6')
+            br
+            br
+            p Your main user segment:
+            textarea(id='mainsegment', rows='1', cols='150', placeholder='Your main user segment', size="131" )
+            br
+            br
+            p Problems:
+            p List all your user problems - be very specific (when how where)
+            //textarea(id='problems', rows='6', cols='150', placeholder='List all your user problems - be very specific (when how where)')
+            table(id='mytable', width="400")
+                tr
+                    td 1
+                    td:  input(type='text', id='1')
+                tr
+                    td 2
+                    td:  input(type='text', id='2')
+                tr
+                    td 3
+                    td:  input(type='text', id='3')
+                tr
+                    td 4
+                    td:  input(type='text', id='4')
+                tr
+                    td 5
+                    td:  input(type='text', id='5')
+                tr
+                    td 6
+                    td:  input(type='text', id='6')
+            br
+            br
+            input(type='submit', value='SAVE & CONTINUE')
