@@ -10,7 +10,7 @@ var app = express();
 
 // all environments
 app.configure(function(){
-
+	app.use(express.bodyParser());
 	app.set('port', process.env.PORT || 3000);
 	app.set('view engine', 'jade');
 	app.set('views', __dirname + '/views');
@@ -37,6 +37,10 @@ app.get('/twotwo', function(req, res){
 
 app.get('/twothree', function(req, res){
 	res.render("twothree.jade");
+});
+
+app.get('/wow', function(req, res){
+	res.render("wow.jade",{title: "Building webapps with nodejs"});
 });
 
 http.createServer(app).listen(app.get('port'), function(){
