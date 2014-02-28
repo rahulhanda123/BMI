@@ -10,6 +10,7 @@ var http = require('http');
 var app = express();
 var index = require('./routes/index.js');
 var stageone = require('./routes/stageone.js');
+//var stageonepointone= require('./routes/stageonepointone.js');
 var stagetwo = require('./routes/stagetwo.js');
 //var stagethree = require('./routes/stagethree.js');
 var stagefour = require('./routes/stagefour.js');
@@ -30,6 +31,15 @@ app.post('/index', index.indexAdd);
 
 app.get('/oneone', stageone.oneone);
 app.post('/oneone', stageone.oneoneAdd);
+
+	app.get('/oneonepointone', stageone.oneonepointone);
+	app.post('/oneonepointone', stageone.oneonepointoneAdd);
+
+	app.get('/oneonepointtwo', stageone.oneonepointtwo);
+	app.post('/oneonepointtwo', stageone.oneonepointtwoAdd);
+
+	app.get('/oneonepointthree', stageone.oneonepointthree);
+	app.post('/oneonepointthree', stageone.oneonepointthreeAdd);
 
 app.get('/twoone', stagetwo.twoone);
 app.post('/twoone', stagetwo.twooneAdd);

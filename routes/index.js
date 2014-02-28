@@ -3,6 +3,6 @@ exports.index = function(req, res){
 }
 
 exports.indexAdd = function(req, res){
-    res.redirect('/oneone');
+    res.redirect('/oneonepointone');
 }
 
