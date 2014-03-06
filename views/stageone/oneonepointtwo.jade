@@ -2,10 +2,14 @@ doctype
 html
     head
         title= title
+        script(src="/javascripts/oneonepointtwo.js")
     body
-            p Insights (Research/Observe):
-            form(id='form', method="POST", action="/oneonepointtwo")
-                textarea(id='Insights', rows='6', cols='150', placeholder='List below anything you have researched or observed which may be useful in understanding the case? Consider environmental technology and business trends. Can you think of failure or success stories in this space?')
-                br
-                br
-                input(type='submit', value='SAVE & CONTINUE')
+        h2(style='color: green;')
+            p Stage 1 - Template 1 - Part 2
+        p Insights (Research/Observe):
+        textarea(id='Insights', rows='6', cols='150', placeholder='List below anything you have researched or observed which may be useful in understanding the case? Consider environmental technology and business trends. Can you think of failure or success stories in this space?')
+        br
+        div
+            a(href="/oneonepointone", onclick="return prevFunction()", style="text-decoration: none") PREVIOUS
+            br
+            a(href="/oneonepointthree", onclick="return nextFunction()", style="text-decoration: none") NEXT

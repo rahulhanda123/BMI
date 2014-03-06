@@ -2,10 +2,12 @@ doctype
 html
     head
         title= title
+        script(src="/javascripts/oneonepointthree.js")
     body
+        h2(style='color: green;')
+            p Stage 1 - Template 1 - Part 3
         p Challenges:
         p Breakdown the overall challenge into different problem areas (sub-challenges)
-        form(id='form', method='POST', action='/oneonepointthree')    
             table(id='mytable', width="400")
                 tr
                     td 1
@@ -25,7 +27,7 @@ html
                 tr
                     td 6
                     td:  input(type='text', id='6')
-
+            div
+            a(href="/oneonepointtwo", onclick="return prevFunction()", style="text-decoration: none") PREVIOUS
             br
-            br
-            input(type='submit', value='SAVE & CONTINUE')
+            a(href="/oneone", onclick="return nextFunction()", style="text-decoration: none") NEXT

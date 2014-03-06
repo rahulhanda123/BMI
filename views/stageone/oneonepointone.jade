@@ -1,11 +1,15 @@
-head
+doctype
+html
+    head
         title= title
+        script(src="/javascripts/oneonepointone.js")
     body
         h2(style='color: green;')
-            p Stage 1 - Template 1 of 1 (Understand)
-        form(id='form', method="POST", action="/oneonepointone")
-            p Key facts & data:
-            textarea(id='facts', rows='6', cols='150', placeholder='What are the main facts, figures, statistics, data points and background information of relevance here?')
+            p Stage 1 - Template 1 - Part 1
+        p Key facts & data:
+        textarea(id='facts', rows='6', cols='150', placeholder='What are the main facts, figures, statistics, data points and background information of relevance here?')
+        br
+        div
+            a(href="/index", onclick="return prevFunction()", style="text-decoration: none") PREVIOUS
             br
-            br
-            input(type='submit', value='SAVE & CONTINUE')
+            a(href="/oneonepointtwo", onclick="return nextFunction()", style="text-decoration: none") NEXT
