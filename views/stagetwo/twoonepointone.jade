@@ -1,0 +1,15 @@
+doctype
+html
+    head
+        title= title
+        script(src="/javascripts/twoonepointone.js")
+    body
+        h2(style='color: green;')
+            p Stage 2 - Template 1 - Part 1
+        p New Insights about your user:
+        textarea(id='newInsights', rows='6', cols='150', placeholder='Data points from expert interviews and online research')
+        br
+        div
+            a(href="/oneone", onclick="return prevFunction()", style="text-decoration: none") PREVIOUS
+            br
+            a(href="/twoonepointtwo", onclick="return nextFunction()", style="text-decoration: none") NEXT

@@ -33,17 +33,21 @@ app.get('/oneonepointthree', stageone.oneonepointthree);
 app.get('/oneone', stageone.oneone);
 
 
-
+app.get('/twoonepointone', stagetwo.twoonepointone);
+app.get('/twoonepointtwo', stagetwo.twoonepointtwo);
+app.get('/twoonepointthree', stagetwo.twoonepointthree);
+app.get('/twoonepointfour', stagetwo.twoonepointfour);
 app.get('/twoone', stagetwo.twoone);
+
 app.get('/twotwo', stagetwo.twotwo);
+
+app.get('/twothreepointone', stagetwo.twothreepointone);
+app.get('/twothreepointtwo', stagetwo.twothreepointtwo);
+app.get('/twothreepointthree', stagetwo.twothreepointthree);
 app.get('/twothree', stagetwo.twothree);
 
+
 app.get('/fourtwo', stagefour.fourtwo);
-
-
-app.get('/wow', function(req, res){
-	res.render("wow.jade",{title: "Building webapps with nodejs"});
-});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
